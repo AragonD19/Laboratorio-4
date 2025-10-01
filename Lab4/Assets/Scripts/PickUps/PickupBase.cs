@@ -17,10 +17,6 @@ public class PickupBase : MonoBehaviour
     void Collect()
     {
         pickupEventChannel.RaiseEvent(data);
-
-        // Opcional: sonido general
-        // AudioManager.Instance.Play("PickupSound");
-
         Destroy(gameObject);
     }
 }

@@ -6,7 +6,7 @@ public class PickupFloat : MonoBehaviour
     public float rotationSpeed = 50f; 
 
     [Header("Flotación")]
-    public float floatAmplitude = 0.25f; 
+    public float floatAmplitude = 0.1f; 
     public float floatFrequency = 1f;    
 
     private Vector3 startPos;

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -23,11 +24,22 @@ public class PlayerStats : MonoBehaviour
         currentHealth -= effectiveDamage;
         currentHealth = Mathf.Max(0, currentHealth);
         Debug.Log("Vida tras daño: " + currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     public void AddArmor(int amount)
     {
         armor += amount;
         Debug.Log("Armadura actual: " + armor);
+    }
+
+    private void Die()
+    {
+        Debug.Log("¡Jugador ha muerto! Reiniciando escena...");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

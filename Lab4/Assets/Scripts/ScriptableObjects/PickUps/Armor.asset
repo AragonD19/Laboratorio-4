@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Armor
   m_EditorClassIdentifier: 
   pickupName: Armadura
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b770add09063f6a4c8ef2a8d50f2343b, type: 3}
   effectType: 4
   value: 25

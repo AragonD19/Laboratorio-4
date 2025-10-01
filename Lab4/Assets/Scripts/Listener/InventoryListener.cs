@@ -18,7 +18,7 @@ public class InventoryListener : MonoBehaviour
     {
         
         if (data.effectType == PickupEffectType.Unlock || 
-            data.effectType == PickupEffectType.AddArmor)
+            data.effectType == PickupEffectType.None)
         {
             InventoryUI.Instance.AddItem(data);
         }
